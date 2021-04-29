@@ -1,0 +1,33 @@
+.intro {
+  background: var(--primary-background);
+  height: 100vh;
+  display: flex;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+@media only screen and (min-width: 400px) {
+  .intro-content{
+    padding: 32px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .intro-content{
+    width: 800px;
+    margin: auto;
+    justify-content: space-between;
+  }
+}
+
+.round-card img {
+  width: 100%;
+  margin-top: -32px;
+}

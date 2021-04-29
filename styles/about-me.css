@@ -1,0 +1,53 @@
+
+#about-me {
+  padding: 0 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.round-card-list {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.round-card.small {
+  width: 240px;
+  height: 240px;
+  margin: 8px;
+  border: none;
+  display: flex;
+}
+
+.round-card.small:hover > span {
+  display: none;
+}
+
+.round-card.small:focus > span {
+  display: none;
+}
+
+.about-me-content {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 85%;
+  display: none;
+}
+
+.round-card.small:hover > .about-me-content {
+  display: block
+}
+
+.round-card.small:focus > .about-me-content {
+  display: block
+}
+
+.about-me-icon {
+  font-size: 120px;
+  color: white;
+}
