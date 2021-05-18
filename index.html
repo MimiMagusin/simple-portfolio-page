@@ -24,83 +24,85 @@
       </div>
     
       <div class="intro-text">
-        <h1>Welcome! I am Mimi.</h1>
-        <a class="subtitle" href="#about-me">Learn more about me <span class="material-icons-round arrow">redo</span></a>
+        <h1 data-i18n>introText</h1>
+        <a class="subtitle" href="#about-me"><span data-i18n>aboutMeCTA</span><span class="material-icons-round arrow">redo</span></a>
       </div>
     </div>  
   </div>
 
   <div id="about-me">
-    <h1 class="section-title">About me</h1>
+    <h1 class="section-title" data-i18n>aboutMeTitle</h1>
     <div class="round-card-list">
       <button class="round-card small" id="ageCard" aria-label="location">
         <span class="material-icons about-me-icon">home</span>
-        <p class="about-me-content">I currently live in <strong>Culemborg</strong>, the Netherlands</p>
+        <p class="about-me-content" data-i18n>location</p>
       </button>
       <button class="round-card small" aria-label="organizing">
         <span class="material-icons about-me-icon">people</span>
-        <p class="about-me-content"><strong>Bringing people together</strong> makes me really happy, whether it is to do some volunteering, to learn or to make some music
-        together!</p>
+        <p class="about-me-content" data-i18n>organizing</p>
       </button>
       <button class="round-card small" aria-label="music">
         <span class="material-icons about-me-icon">music_note</span>
-        <p class="about-me-content">Once upon a time a studied to become a composer and I still love <strong>playing and listening to music together!</strong></p>
+        <p class="about-me-content" data-i18n>music</p>
       </button>
       <button class="round-card small" aria-label="code">
         <span class="material-icons about-me-icon">code</span>
-        <p class="about-me-content">I have been working as a full stack developer since 2017! I have most experience with <strong>Typescript</strong>, <strong>React</strong> and <strong>Graphql</strong>.</p>
+        <p class="about-me-content" data-i18n>code</p>
       </button>
       <button class="round-card small">
         <span class="material-icons about-me-icon" aria-label="education">school</span>
-        <p class="about-me-content">I am passionate about education! I have been <strong>teaching</strong> code to aspiring programmers and I am currently employed by a
-        company that provides <strong>educational resources</strong>.</p>
+        <p class="about-me-content" data-i18n>education</p>
       </button>
     </div>
-    <a class="subtitle" href="#timeline">Find out more <span class="material-icons-round arrow">redo</span> </a>
+    <a class="subtitle" href="#timeline"><span data-i18n="">timelineCTA</span><span class="material-icons-round arrow">redo</span> </a>
   </div>
 
   <div id="timeline">
-    <h1 class="section-title">Timeline</h1>
+    <h1 class="section-title" data-i18n>timelineTitle</h1>
     <ul class="timeline-container">
       <li class="timeline-item">
-        <p class="timeline-card">Member of works council (OR) Infinitas Learning <strong>(2021-...)</strong></p>
+        <p class="timeline-card" data-i18n>worksCouncil</p>
       </li>
       <li class="timeline-item">
-        <p class="timeline-card">Software Engineer Noordhoff / Infinitas Learning <strong>(2019-...)</strong></p>
+        <p class="timeline-card" data-i18n>infinitas</p>
       </li>
       <li class="timeline-item">
-        <p class="timeline-card">Full Stack Developer / Teacher Codaisseur<strong>(2017-2019)</strong></p>
+        <p class="timeline-card" data-i18n>codaisseur</p>
       </li>
       <li class="timeline-item">
-        <p class="timeline-card">Code Academy Codaisseur <strong>(2017)</strong></p>
+        <p class="timeline-card" data-i18n>codeAcademy</p>
       </li>
       <li class="timeline-item">
-        <p class="timeline-card">Student Leadership Award <strong>(2016)</strong></p>
+        <p class="timeline-card" data-i18n>studentLeadershipAward</p>
       </li>
       <li class="timeline-item">
-        <p class="timeline-card">Founder & Conductor College Cantors <strong>(2016)</strong></p>
+        <p class="timeline-card" data-i18n>collegeCantors</p>
       </li>
       <li class="timeline-item">
-        <p class="timeline-card">Chair Music Society (UCR) <strong>(2015)</strong></p>
+        <p class="timeline-card" data-i18n>musicSociety</p>
       </li>
       <li class="timeline-item">
-        <p class="timeline-card">Tutor StudentPlus <strong>(2013-2017)</strong></p>
+        <p class="timeline-card" data-i18n>studentPlus</p>
       </li>
       <li class="timeline-item">
-        <p class="timeline-card">University College Roosevelt (BA Liberal Arts / Musical Composition) <strong>(2013-2016)</strong></p>
+        <p class="timeline-card" data-i18n>ucr</p>
       </li>
       <li class="timeline-item">
-        <p class="timeline-card">Christiaan Huygens College (VWO, Natuur & Gezondheid) <strong>(2007-2013)</strong></p>
+        <p class="timeline-card" data-i18n>highSchool</p>
+      </li>
+      <li class="timeline-item">
+        <p class="timeline-card" data-i18n>born</p>
       </li>
     </ul>
     <footer>
-      <span>You reached the end! Find out more on</span>
+      <span data-i18n>footerFirst</span>
       <a class="subtitle" href="https://nl.linkedin.com/in/mimi-magusin-a58610146">LinkedIn</a>
       <span>, </span>
       <a class="subtitle" href="https://github.com/MimiMagusin">GitHub</a>
-      <span>, or go </span>
-      <a class="subtitle" href="">back to the top of this page</a>
+      <span data-i18n>footerSecond</span>
+      <a class="subtitle" href="" data-i18n>footerThird</a>
     </footer> 
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
