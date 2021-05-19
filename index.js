@@ -10,11 +10,13 @@ const englishContent = {
   timelineCTA: 'Find out more ',
   timelineTitle: 'Timeline',
   worksCouncil: 'Member of works council (OR) Infinitas Learning <strong>(2021-...)</strong>',
-  infinitas: 'Software Engineer Noordhoff / Infinitas Learning <strong>(2019-...)</strong>',
+  infinitas: 'Software Engineer Primary Education Noordhoff / Infinitas Learning <strong>(2019-...)</strong>',
   codaisseur: 'Full Stack Developer / Teacher Codaisseur<strong>(2017-2019)</strong>',
   codeAcademy: 'Code Academy Codaisseur <strong>(2017)</strong>',
   studentLeadershipAward: 'Student Leadership Award <strong>(2016)</strong>',
   collegeCantors: 'Founder & Conductor College Cantors <strong>(2016)</strong>',
+  vpro: 'Internship <em>VPRO Tegenlicht</em> Zeeuwse Bibliotheek <strong>(2016)</strong>',
+  goingGlocal: 'Internship Anthropology & Education Namibië?Netherlands <strong>(Summer 2015)</strong>',
   musicSociety: 'Chair Music Society (UCR) <strong>(2015)</strong>',
   studentPlus: 'Tutor StudentPlus <strong>(2013-2017)</strong>',
   ucr: 'University College Roosevelt (BA Liberal Arts / Musical Composition) <strong>(2013-2016)</strong>',
@@ -33,15 +35,17 @@ const dutchContent = {
   organizing: 'Ik <strong>breng mensen graag samen</strong> voor sociale activiteiten, of om lekker muziek te maken!',
   music: 'Ooit heb ik compositie gestudeerd, en ik heb een tijd lang <strong>koren gedirigeerd</strong>',
   code: 'Sinds 2017 werk ik als software engineer, vooral met <strong>Typescript</strong>, <strong>React</strong> en <strong>Graphql</strong>.',
-  education: 'Educatie is een passie! Ik heb lesgegeven aan toekomstige programmeurs en <strong>werk voor een educatieve uitgever</strong>.',
+  education: 'Alles draait om <strong>educatie</strong>! Ik heb lesgegeven aan toekomstige programmeurs en <strong>werk voor een educatieve uitgever</strong>.',
   timelineCTA: 'Check mijn tijdlijn',
   timelineTitle: 'Tijdlijn',
   worksCouncil: 'Lid van OR Infinitas Learning <strong>(2021-...)</strong>',
-  infinitas: 'Software Engineer Noordhoff / Infinitas Learning <strong>(2019-...)</strong>',
+  infinitas: 'Software Engineer Basisonderwijs Noordhoff / Infinitas Learning <strong>(2019-...)</strong>',
   codaisseur: 'Full Stack Developer / Leerkracht Codaisseur <strong>(2017-2019)</strong>',
   codeAcademy: 'Code Academy Codaisseur <strong>(2017)</strong>',
   studentLeadershipAward: 'Student Leadership Award <strong>(2016)</strong>',
   collegeCantors: 'Oprichter & Dirigent College Cantors <strong>(2016)</strong>',
+  vpro: 'Stage <em>VPRO Tegenlicht</em> Zeeuwse Bibliotheek <strong>(2016)</strong>',
+  goingGlocal: 'Stage Antropologie & Educatie in Namibië/Nederland <strong>(zomer 2015)</strong>',
   musicSociety: 'Voorzitter Music Society (UCR) <strong>(2015)</strong>',
   studentPlus: 'Docent StudentPlus <strong>(2013-2017)</strong>',
   ucr: 'University College Roosevelt (BA Liberal Arts / Musical Composition) <strong>(2013-2016)</strong>',
@@ -60,7 +64,7 @@ const replaceText = (el) => {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const lan = urlParams.get('lan')
-    console.log(lan);
+
     switch(lan) {
       case 'nl':
         el.innerHTML = dutchContent[key] || key;
